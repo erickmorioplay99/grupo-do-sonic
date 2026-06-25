@@ -1,12 +1,76 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>grupo-do-sonic</title>
-    </head>
-    <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grupo do Sonic</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: #f0f4f8;
+            color: #1a202c;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            background-color: #0054a6; /* Azul clássico do Sonic */
+            border-bottom: 4px solid #ffcc00; /* Linha amarela do Anel */
+            padding: 1.5rem;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #ffffff;
+            letter-spacing: 1px;
+            text-shadow: 2px 2px 0px #e60012; /* Sombra vermelha do tênis */
+        }
+        main {
+            flex: 1;
+            max-width: 1000px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+        }
+        footer {
+            background-color: #0054a6;
+            border-top: 4px solid #ffcc00;
+            text-align: center;
+            padding: 1.5rem;
+            font-size: 0.9rem;
+            color: #ffffff;
+            font-weight: 500;
+        }
+        /* Estilos extras que estavam na home */
+        .endpoint-list { list-style: none; margin: 0; padding: 0; }
+        .endpoint-item { border: 1px solid #edf2f7; border-radius: 14px; padding: 18px; margin-bottom: 16px; background: #ffffff; border-left: 4px solid #e60012; }
+        .endpoint-url { display: block; font-family: monospace; background: #eef2ff; color: #1d4ed8; padding: 10px 14px; border-radius: 10px; margin-bottom: 10px; }
+        .note { margin-top: 24px; padding: 18px; background: #fffbeb; border-left: 4px solid #ffcc00; color: #b45309; border-radius: 12px; }
+        pre { background: #f7fafc; padding: 10px; border-radius: 6px; overflow-x: auto; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Grupo do Sonic</h1>
+    </header>
+
+    <main>
         {% block content %}
         {% endblock %}
-    </body>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Grupo do Sonic. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
 </html>

@@ -121,4 +121,4 @@ STATIC_URL = 'static/'
 
 #Configuração do pillow
 MEDIA_URL = '/media/'
-MEDIA_ROOT = BASE_DIR / 'media/'
+MEDIA_ROOT = BASE_DIR / 'media'
