@@ -42,54 +42,14 @@
                 <strong>Ver perfil do usuário</strong>
                 <span class="endpoint-url">POST /userprofile/view/</span>
                 <p>Retorna os dados do usuário autenticado. Requer sessão ativa.</p>
-                <pre>{ info:
-  name: UserProfile View
-  type: http
-  seq: 3
-
-http:
-  method: POST
-  url: "{{baseURL}}/userprofile/view/"
-  headers:
-    - name: x-requested-with
-      value: XMLHttpRequest
-  body:
-    type: json
-    data: "{}"
-  auth: inherit
-
-settings:
-  encodeUrl: true
-  timeout: 0
-  followRedirects: true
-  maxRedirects: 5}</pre>
+                
             </li>
 
             <li class="endpoint-item">
                 <strong>Listar usuários</strong>
                 <span class="endpoint-url">POST /userprofile/list/</span>
                 <p>Retorna a lista de perfis de usuários. Requer usuário staff autenticado.</p>
-                <pre>{info:
-  name: UserProfile List
-  type: http
-  seq: 4
-
-http:
-  method: POST
-  url: "{{baseURL}}/userprofile/list/"
-  headers:
-    - name: x-requested-with
-      value: XMLHttpRequest
-  body:
-    type: json
-    data: "{}"
-  auth: inherit
-
-settings:
-  encodeUrl: true
-  timeout: 0
-  followRedirects: true
-  maxRedirects: 5}</pre>
+                
             </li>
         </ul>
     </section>
